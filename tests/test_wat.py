@@ -10,10 +10,12 @@ os.environ["SDL_AUDIODRIVER"] = "dummy"
 sys.path.insert(0, str(Path(__file__).parent.parent))
 import wat
 
+
 def test_wat_constants():
     assert wat.BLACK == (0, 0, 0)
     assert wat.WHITE == (255, 255, 255)
     assert hasattr(wat, "WATApp")
+
 
 def test_csv_datasets():
     csv_files = ["wat.csv", "wat-chatgpt.csv"]
